@@ -1,13 +1,15 @@
-const nota = 59;
+const a = 2
+const b = 7
+const c = 4
 
-if (nota >= 80) {
-    console.log("Parabéns, você foi aprovada(o)");
+if (a > b && a > c) {
+    console.log("'a' é maior que 'b' e 'c'");
 }
 
-else if (nota < 80 && nota >= 60) {
-    console.log ("Você está na lista de espera");
+else if (b > a && b > c) {
+    console.log ("'b' é maior que 'a' e 'c'");
 }
 
 else {
-    console.log ("Você foi reprovado");
+    console.log ("'c' é maior que 'a' e 'b'");
 }
