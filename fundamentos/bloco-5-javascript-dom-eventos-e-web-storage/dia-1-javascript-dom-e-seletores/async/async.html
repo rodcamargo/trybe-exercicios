@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p class = 'sobreFilme' id="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p class = 'sobreFilme' id="second-paragraph">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+      document.getElementById('page-title').innerText = 'Filme Soul';
+      document.getElementsByClassName('sobreFilme')[0].innerText = 'Um filme que nos faz refletir sobre o propósito que temos em nossas vidas.'
+      document.getElementsByClassName('sobreFilme')[1].innerText = 'Qual é o seu principal propósito de vida?! Poderia ser uma pessoa que tem o propósito de ensinar...'
+      let paragraph2 = document.getElementsByClassName('sobreFilme')[1];
+      paragraph2.style.backgroundColor = 'blue';
+      paragraph2.style.color = 'white';
+      let subtitleTag = document.getElementsByTagName('h4')[0];
+      subtitleTag.style.color = 'orange';
+    </script>
+  </body>
+</html>
