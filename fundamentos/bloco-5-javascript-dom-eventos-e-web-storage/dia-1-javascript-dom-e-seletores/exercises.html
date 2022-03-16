@@ -2,109 +2,108 @@
 <html>
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Exercício 5.1</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Exercício 5.1</title>
 
-    <style>
-        main,
-        section {
-            border-color: black;
-            border-style: solid;
-        }
+  <style>
+    main,
+    section {
+      border-color: black;
+      border-style: solid;
+    }
 
-        .title {
-            text-align: center;
-            text-transform: lowercase;
-        }
+    .title {
+      text-align: center;
+      text-transform: lowercase;
+    }
 
-        .main-content {
-            background-color: yellow;
-        }
+    .main-content {
+      background-color: yellow;
+    }
 
-        .main-content .center-content {
-            background-color: red;
-            width: 50%;
-            margin: 0 auto;
-        }
+    .main-content .center-content {
+      background-color: red;
+      width: 50%;
+      margin: 0 auto;
+    }
 
-        .main-content .center-content p {
-            font-style: italic;
-        }
-    </style>
+    .main-content .center-content p {
+      font-style: italic;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
-    </header>
-    <main class="main-content">
-        <section class="center-content">
-            <p>Texto padrão do nosso site</p>
-            <p>-----</p>
-            <p>Trybe</p>
-        </section>
-    </main>
-    <script>
-        /*
-        Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
-        - document.getElementById()
-        - document.getElementsByClassName()
-        - document.getElementsByTagName()
-        */
-        //  1. Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
-        function changeText(newText) {
-            let text1 = document.getElementsByTagName('p')[1];
-            text1.innerHTML = 'Especialista Fullstack, trabalhando numa super empresa de tecnologia!!!';
-    
-        }
-        console.log(changeText());
+  <header>
+    <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+  </header>
+  <main class="main-content">
+    <section class="center-content">
+      <p>Texto padrão do nosso site</p>
+      <p>-----</p>
+      <p>Trybe</p>
+    </section>
+  </main>
+  <script>
+    /*
+    Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
+    - document.getElementById()
+    - document.getElementsByClassName()
+    - document.getElementsByTagName()
+    */
+    //  1. Crie uma função que mude o texto na tag <p> para uma descrição de como você se vê daqui a 2 anos. (Não gaste tempo pensando no texto e sim realizando o exercício)
+    function changeText() {
+      let text1 = document.getElementsByTagName('p')[1];
+      text1.innerHTML = 'Especialista Fullstack, trabalhando numa super empresa de tecnologia!!!';
+    }
+    console.log(changeText());
 
-        // 2. Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
-        function changeBackground() {
-            let color1 = document.getElementsByClassName('main-content')[0];
-            color1.style.backgroundColor = 'rgb(76,164,109)';
-        }
-        console.log(changeBackground());
+    // 2. Crie uma função que mude a cor do quadrado amarelo para o verde da Trybe (rgb(76,164,109)).
+    function changeBackground() {
+      let color = document.getElementsByClassName('main-content')[0];
+      color.style.backgroundColor = 'rgb(76,164,109)';
+    }
+    console.log(changeBackground());
 
-        //  3. Crie uma função que mude a cor do quadrado vermelho para branco.
+    //  3. Crie uma função que mude a cor do quadrado vermelho para branco.
 
-        function changeBackground2(newColor) {
-            let color2 = document.getElementsByClassName('center-content')[0];
-            color2.style.backgroundColor = 'white';
-        }
-        console.log(changeBackground2());
+    function changeBackground2() {
+      let color = document.getElementsByClassName('center-content')[0];
+      color.style.backgroundColor = 'white';
+    }
+    console.log(changeBackground2());
 
-        // 4. Crie uma função que corrija o texto da tag <h1>.
+    // 4. Crie uma função que corrija o texto da tag <h1>.
 
-        function correctText() {
-            let text2 = document.getElementsByTagName('h1')[0];
-            text2.innerText = 'Exercício 5.1 - JavaScript';
-        }
-        console.log(correctText());
+    function correctText() {
+      let text = document.getElementsByTagName('h1')[0];
+      text.innerText = 'Exercício 5.1 - JavaScript';
+    }
+    console.log(correctText());
 
-        // 5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+    // 5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
 
-        function upperText() {
-            let texts = document.getElementsByTagName('p');
-            for (let index = 0; index < texts.length; index += 1) {
-                texts[index].style.textTransform = 'uppercase';
-            }
-        }
-        console.log(upperText());
+    function upperText() {
+      let texts = document.getElementsByTagName('p');
+      for (let index = 0; index < texts.length; index += 1) {
+        texts[index].style.textTransform = 'uppercase';
+      }
+    }
+    console.log(upperText());
 
-        // 6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+    // 6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
 
-        function showText() {
+    function showText() {
 
-            let texts = document.getElementsByTagName('p');
-            for (let index = 0; index < texts.length; index += 1) {
-                console.log(texts[index].innerText) // pode ser tb .innerHTML 
-            }
-        }
-        console.log(showText());
-    
-    </script>
+      let texts = document.getElementsByTagName('p');
+      for (let index = 0; index < texts.length; index += 1) {
+        console.log(texts[index].innerText) // pode ser tb .innerHTML 
+      }
+    }
+    console.log(showText());
+
+  </script>
 </body>
 
 </html>
