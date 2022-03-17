@@ -21,14 +21,46 @@ createDaysOfTheWeek();
 
 const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 
-let calendarioUl = document.getElementById('days');
+function criarCalendario() {
+
+  let calendarioUL = document.getElementById('days');
+  for (let index = 0; index < dezDaysList.length; index += 1) {
+    let dia = dezDaysList[index];
+    let calendarioDia = document.createElement('li');
+    calendarioDia.innerHTML = dia; // poderia utilizar direto o dezDaysList[index]
+    calendarioUL.appendChild(calendarioDia);
+
+    if (dia == 24 || dia == 31) {
+      calendarioDia.className = ('day', 'holiday');
+    } else if (dia == 4 || dia == 11 || dia == 18) {
+      calendarioDia.className = ('day', 'friday');
+    } else if (dia == 25) {
+      calendarioDia.className = ('day', 'friday', 'holiday');
+    } else {
+      calendarioDia.className = ('day');
+    }
+  }
+}
+criarCalendario()
+
+// 2. Implemente uma função que receba como parâmetro a string "Feriados" e crie dinamicamente um botão com o nome "Feriados".
+// Adicione a este botão a ID "btn-holiday" .
+// Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
+
+function buttonFeriados() {
+  let newButton = document.createElement('button');
+  newButton.innerText = 'Feriados';
+  newButton.id = 'btn-holiday';
+  let divButton = document.getElementsByClassName('buttons-container')[0]; // queria saber pq tive que declarar a posição [0]
+  divButton.appendChild(newButton);
+}
+buttonFeriados()
 
 
-for (let index = 0; index < dezDaysList.length; index += 1) {
-  let dia = dezDaysList[index];
 
-  let calendarioIL = document.createElement('li');
-  calendarioIL.innerHTML = dia;
-  calendarioUl.appendChild(calendarioIL);
-  
+// 3. Implemente uma função que adicione ao botão "Feriados" um evento de "click" que muda a cor de fundo dos dias que possuem a classe "holiday" .
+// É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial com a cor "rgb(238,238,238)" .
+
+function buttonClick (){
+
 }
