@@ -31,11 +31,11 @@ function criarCalendario() {
     calendarioUL.appendChild(calendarioDia);
 
     if (dia == 24 || dia == 31) {
-      calendarioDia.className = ('day', 'holiday');
+      calendarioDia.className = ('day holiday');
     } else if (dia == 4 || dia == 11 || dia == 18) {
-      calendarioDia.className = ('day', 'friday');
+      calendarioDia.className = ('day friday');
     } else if (dia == 25) {
-      calendarioDia.className = ('day', 'friday', 'holiday');
+      calendarioDia.className = ('day friday holiday');
     } else {
       calendarioDia.className = ('day');
     }
@@ -62,14 +62,15 @@ buttonFeriados()
 function colorFeriados() {
   let btnFeriados = document.getElementById('btn-holiday')
   let feriados = document.querySelectorAll('.holiday');
+  let backgroundColor = 'rgb(238,238,238)'
 
   btnFeriados.addEventListener('click', function () {
     for (index = 0; index < feriados.length; index += 1) {
       if (feriados[index].style.backgroundColor !== 'yellow') {
         feriados[index].style.backgroundColor = 'yellow'
-      } 
+      }
       else {
-        feriados[index].style.backgroundColor = 'rgb(238,238,238)'
+        feriados[index].style.backgroundColor = backgroundColor;
       }
     }
   })
@@ -82,10 +83,72 @@ colorFeriados()
 
 function buttonFriday() {
   let newButton = document.createElement('button');
-newButton.innerText = 'Sexta-feira'
-newButton.id = 'btn-friday';
-let divButtonsContainer = document.getElementsByClassName('buttons-container')[0];
-divButtonsContainer.appendChild(newButton);
+  newButton.innerText = 'Sexta-feira'
+  newButton.id = 'btn-friday';
+  let divButtonsContainer = document.getElementsByClassName('buttons-container')[0];
+  divButtonsContainer.appendChild(newButton);
 }
 buttonFriday()
+
+// 5. Implemente uma função que adicione ao botão "Sexta-feira" um evento de "click" que modifica o texto exibido nos dias que são Sexta-feira.
+// É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial exibindo os dias.
+
+function textFridays(fridayArray) {
+  let btnFridays = document.getElementById('btn-friday');
+  let fridays = document.getElementsByClassName('friday');
+  let fridayText = 'Sextou!'
+
+
+  btnFridays.addEventListener('click', function () {
+    for (index = 0; index < fridays.length; index += 1) {
+      if (fridays[index].innerHTML !== fridayText) {
+        fridays[index].innerHTML = fridayText;
+      }
+      else {
+        fridays[index].innerHTML = fridayArray[index];
+      }
+    }
+  })
+}
+let fridaysDez = [4, 11, 18, 25];
+textFridays(fridaysDez)
+
+// 6. Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
+
+function zoomDay() {
+  let days = document.getElementById('days');
+
+  days.addEventListener('mouseover', function (event) {
+    event.target.style.fontSize = '40px';
+    event.target.style.fontWeight = '500';
+  })
+};
+zoomDay()
+
+function zoomOutDay() {
+  let days = document.getElementById('days');
+
+  days.addEventListener('mouseout', function(event) {
+    event.target.style.fontSize = '20px';
+    event.target.style.fontWeight = '200';
+  })
+}
+zoomOutDay()
+
+// 7. Implemente uma função que adiciona uma tarefa personalizada ao calendário. A função deve receber como parâmetro a string com o nome da tarefa (ex: "cozinhar") e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
+// O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
+
+function addTarefas (tarefa) {
+  
+  let divTarefas = document.querySelector('.my-tasks');
+  let qualTarefa = document.createElement('span');
+  qualTarefa.innerHTML = tarefa
+
+  divTarefas.appendChild(qualTarefa);
+}
+addTarefas('Estudar Javascript')
+
+// Implemente uma função que adiciona uma legenda com cor para a tarefa criada no exercício anterior. Esta função deverá receber como parâmetro uma string ("cor") e criar dinamicamente um elemento de tag <div> com a classe task .
+// O parâmetro cor deverá ser utilizado como cor de fundo da <div> criada.
+// O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
 
