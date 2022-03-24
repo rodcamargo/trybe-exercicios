@@ -12,23 +12,58 @@ const myWebpage = document.getElementById('my-spotrybefy');
 // 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
 // 2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
 
-let clickLi = document.getElementById('first-li');
-
-clickLi.addEventListener('click', addClass);
-
-function addClass () {
-  clickLi.className = 'tech';
+function addClassTech(event) {
+  let element = document.querySelector('.tech');
+  element.classList.remove('tech');
+  event.target.classList.add('tech');
+  input.value = ''
 }
+
+firstLi.addEventListener('click', addClassTech);
+secondLi.addEventListener('click', addClassTech);
+thirdLi.addEventListener('click', addClassTech);
 
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
+
+input.addEventListener('input', function (event) {
+  let element = document.querySelector('.tech');
+  element.innerText = event.target.value;
+});
 
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 // 4.1. Que tal redirecionar para seu portfólio?
 
+myWebpage.addEventListener('dblclick', function () {
+  window.location.replace('https://blog.betrybe.com/');
+});
+
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
+
+myWebpage.addEventListener('mouseover', function (event) {
+  event.target.style.color = 'yellow';
+});
+
+myWebpage.addEventListener('mouseout', function (event) {
+  event.target.style.color = 'unset'
+});
+
+// Rodrigo. O requisito 5(acima) poderia ser feito da forma abaixo, porém com mais linhas de código.
+
+// function changeColor(event) {
+//   event.target.style.color = 'yellow';
+// }
+
+// myWebpage.addEventListener('mouseover', changeColor);
+
+// function changeColor2(event) {
+//   event.target.style.color = 'unset';
+// }
+
+// myWebpage.addEventListener('mouseout', changeColor2);
+
 
 // Segue abaixo um exemplo do uso de event.target:
 

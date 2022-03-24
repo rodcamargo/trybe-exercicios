@@ -24,20 +24,24 @@ const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 
 function criarCalendario() {
 
   let calendarioUL = document.getElementById('days');
+
   for (let index = 0; index < dezDaysList.length; index += 1) {
     let dia = dezDaysList[index];
     let calendarioDia = document.createElement('li');
-    calendarioDia.innerHTML = dia; // poderia utilizar direto o dezDaysList[index]
-    calendarioUL.appendChild(calendarioDia);
 
     if (dia == 24 || dia == 31) {
       calendarioDia.className = ('day holiday');
+      calendarioDia.innerHTML = dia;
     } else if (dia == 4 || dia == 11 || dia == 18) {
       calendarioDia.className = ('day friday');
+      calendarioDia.innerHTML = dia;
     } else if (dia == 25) {
       calendarioDia.className = ('day friday holiday');
+      calendarioDia.innerHTML = dia;
     } else {
       calendarioDia.className = ('day');
+      calendarioDia.innerHTML = dia;
+      calendarioUL.appendChild(calendarioDia);
     }
   }
 }
@@ -119,7 +123,7 @@ function zoomDay() {
   let days = document.getElementById('days');
 
   days.addEventListener('mouseover', function (event) {
-    event.target.style.fontSize = '40px';
+    event.target.style.fontSize = '35px';
     event.target.style.fontWeight = '500';
   })
 };
@@ -128,7 +132,7 @@ zoomDay()
 function zoomOutDay() {
   let days = document.getElementById('days');
 
-  days.addEventListener('mouseout', function(event) {
+  days.addEventListener('mouseout', function (event) {
     event.target.style.fontSize = '20px';
     event.target.style.fontWeight = '200';
   })
@@ -138,8 +142,8 @@ zoomOutDay()
 // 7. Implemente uma função que adiciona uma tarefa personalizada ao calendário. A função deve receber como parâmetro a string com o nome da tarefa (ex: "cozinhar") e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
 // O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
 
-function addTarefas (tarefa) {
-  
+function addTarefas(tarefa) {
+
   let divTarefas = document.querySelector('.my-tasks');
   let qualTarefa = document.createElement('span');
   qualTarefa.innerHTML = tarefa
@@ -148,7 +152,99 @@ function addTarefas (tarefa) {
 }
 addTarefas('Estudar Javascript')
 
+
 // Implemente uma função que adiciona uma legenda com cor para a tarefa criada no exercício anterior. Esta função deverá receber como parâmetro uma string ("cor") e criar dinamicamente um elemento de tag <div> com a classe task .
 // O parâmetro cor deverá ser utilizado como cor de fundo da <div> criada.
 // O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
 
+function addLegenda(cor) {
+
+  let divTarefas = document.querySelector('.my-tasks');
+  let legenda = document.createElement('div');
+
+  legenda.className = 'task'
+  legenda.style.backgroundColor = cor
+  divTarefas.appendChild(legenda)
+
+}
+addLegenda('red')
+
+// 9. Implemente uma função que adiciona um evento que, ao clicar no elemento com a tag <div> referente a cor da sua tarefa, atribua a este elemento a classe task selected , ou seja, quando sua tarefa possuir a classe task selected , ela estará selecionada.
+// Ao clicar novamente no elemento, a sua classe deverá voltar a ser somente task , ou seja, esta tarefa está deixando de ser uma tarefa selecionada.
+
+function clickTarefa() {
+
+  let tarefaSelecionada = document.getElementsByClassName('task selected')
+  let divTarefas = document.querySelector('.task');
+
+  divTarefas.addEventListener('click', function (event) {
+    if (tarefaSelecionada.length === 0) {
+      event.target.className = 'task selected';
+      console.log(divTarefas)
+    }
+    else {
+      event.target.className = 'task';
+      console.log(divTarefas)
+    }
+  });
+};
+clickTarefa()
+
+// 10. Implemente uma função que adiciona um evento que, ao clicar em um dia do mês no calendário, atribua a este dia a cor da legenda da sua tarefa selecionada.
+// Ao clicar novamente no dia com a cor da legenda, a sua cor deverá voltar à configuração inicial rgb(119,119,119) .
+
+function clickDay() {
+
+  let tarefaSelecionada = document.getElementsByClassName('task selected');
+  let day = document.querySelector('#days');
+  let divTarefa = document.querySelector('.task');
+  let corTarefa = divTarefa.style.backgroundColor;
+
+  day.addEventListener('click', function (event) {
+
+    let eventCor = event.target.style.color;
+
+    if (tarefaSelecionada.length > 0 && eventCor !== corTarefa) {
+      let cor = tarefaSelecionada[0].style.backgroundColor;
+      event.target.style.color = cor;
+    }
+    else if (eventCor === corTarefa && tarefaSelecionada.length !== 0) {
+      event.target.style.color = 'rgb(119,119,119)';
+    }
+  })
+}
+clickDay()
+
+// Bonus. Vamos adicionar compromissos ao seu calendário? Implemente uma função que, ao digitar um compromisso na caixa de texto "COMPROMISSOS", adiciona o item à lista "MEUS COMPROMISSOS" ao clicar no botão "ADICIONAR".
+// Se nenhum caractere for inserido no campo input , a função deve retornar um alert com uma mensagem de erro ao clicar em "ADICIONAR".
+// Ao pressionar a tecla "enter" o evento também deverá ser disparado.
+
+function addCompromisso() {
+  let divInserir = document.querySelector('#task-input');
+  let addButton = document.querySelector('#btn-add');
+  let listaCompromissos = document.querySelector('.task-list');
+
+  addButton.addEventListener('click', function() {
+    if (divInserir.value.length > 0) {
+      let novoCompromisso = document.createElement('li');
+      novoCompromisso.innerText = divInserir.value;
+
+      listaCompromissos.appendChild(novoCompromisso);
+      divInserir.value = '';
+    } else {
+      alert('Error: Digite ao menos 1 caractere.');
+    }
+  })
+
+  divInserir.addEventListener('keyup', function(event) {
+    if (event.key === 'Enter' && divInserir.value.length > 0) {
+      let novoCompromisso = document.createElement('li');
+      novoCompromisso.innerText = divInserir.value;
+
+      listaCompromissos.appendChild(novoCompromisso);
+      divInserir.value = '';
+    }
+  });
+};
+
+addCompromisso();
