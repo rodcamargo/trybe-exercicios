@@ -40,6 +40,10 @@ header{
   height: 25px;
 }
 
+.div-radio label {
+  margin-right: 15px;
+}
+
 textarea {
   width: 100%;
   margin: 10px 0;
@@ -57,13 +61,17 @@ p {
   margin-right: 5px;
 }
 
+#div-btn {
+  text-align: center;
+}
 button {
   background-color: rgb(19, 102, 39);
   color: white;
   border: 0;
-  width: 100px;
+  width: 90px;
   height: 30px;
   font-size: 20px;
   border-radius: 5px;
   margin-bottom: 15px;
+  margin-right: 10px;
 }
