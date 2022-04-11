@@ -224,3 +224,4 @@ gameActions.warriorTurn(warriorAttack);
 gameActions.mageTurn(mageAttack);
 gameActions.dragonTurn(dragonAttack);
 console.log(gameActions.turnResults());
+
