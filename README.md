@@ -101,17 +101,17 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 13: Metodologias Ágeis
 
 - [x] 13-1: _Metodologias Ágeis_
-- [ ] 13-2: _[Projeto - Frontend Online Store]()_
+- [x] 13-2: _[Projeto - Frontend Online Store]()_
 
 ##### Bloco 14: Testes em React
 
-- [ ] 14-1: _Testando React com a React Testing Library_
-- [ ] 14-2: _Testando React com a React Testing Library - Parte 2_
-- [ ] 14-3: _[Projeto - Testes em React]()_
+- [x] 14-1: _Testando React com a React Testing Library_
+- [x] 14-2: _Testando React com a React Testing Library - Parte 2_
+- [x] 14-3: _[Projeto - Testes em React]()_
 
 ##### Bloco 15: Introdução ao Redux
 
-- [ ] 15-1: _Introdução ao Redux_
+- [x] 15-1: _Introdução ao Redux_
 - [ ] 15-2: _React com Redux - Parte 1_
 - [ ] 15-3: _React com Redux - Prática_
 - [ ] 15-4: _React com Redux - Parte 2_
