@@ -8,36 +8,36 @@ _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vi
 
 O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
 
-## Fundamentos do Desenvolvimento Web :heavy_check_mark:
+## Módulo: Fundamentos do Desenvolvimento Web :heavy_check_mark:
 
-##### Bloco 1: Introdução - Unix & Shell
+##### Seção 1: Unix & Bash
 
-- [x] 1-3: _Unix & Shell- Part 1_
-- [x] 1-4: _Unix & Shell- Part 2_
+- [x] 1-1: _Unix & Bash - Part 1_
+- [x] 1-2: _Unix & Bash - Part 2_
 
-##### Bloco 2: Git & GitHub
+##### Seção 2: Git & GitHub e Internet
 
 - [x] 2-1: _O que é e para que serve?_
 - [x] 2-2: _Entendendo os comandos_
-- [x] 2-3: _Internet - Entendendo como ela funciona_
 
-##### Bloco 3: Introdução - HTML & CSS
+##### Seção 3: Introdução à HTML & CSS
 
 - [x] 3-1: _HTML & CSS - Estruturas de página_
 - [x] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [x] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [x] 3-4: _HTML Semântico_
-- [x] 3-5: _[Projeto - HTML & CSS]()_
+- [x] 3-5: _[Projeto - Lessons Learned]()_
 
-##### Bloco 4: Introdução - JavaScript
+##### Seção 4: Introdução à JavaScript
 
 - [x] 4-1: _JavaScript - Primeiros passos_
 - [x] 4-2: _JavaScript - Array e loop For_
 - [x] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [x] 4-4: _JavaScript - Objetos e funções_
-- [x] 4-5: _[Projeto - Playground Functions]()_
+- [x] 4-5: _JavaScript ES6 - let, const, arrow functions e template literals
+- [x] 4-6: _[Projeto - Playground Functions]()_
 
-##### Bloco 5: Introdução - JavaScript - Projetos
+##### Seção 5: JavaScript: DOM. Eventos e Web Storage
 
 - [x] 5-1: _JavaScript - DOM e seletores_
 - [x] 5-2: _JavaScript - Trabalhando com elementos_
@@ -49,7 +49,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 5-7: _[Projeto - Adivinhe a Cor]()_
 - [ ] 5-7: _[Projeto - Carta Misteriosa]()_
 
-##### Bloco 6: HTML & CSS avançado
+##### Seção 6: HTML & CSS: Forms, Flexbox e Responsivo
 
 - [x] 6-1: _HTML & CSS - Forms_
 - [x] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
@@ -58,82 +58,84 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 6-5: _CSS Responsivo - Mobile First_
 - [x] 6-6: _[Projeto - TrybeWarts]()_
 
-##### Bloco 7: JavaScript ES6 & Testes Unitários
+##### Seção 7: Introdução à JavaScript ES6 & Testes Unitários
 
 - [x] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
 - [x] 7-2: _JavaScript ES6 - Fluxo de exceção e Objetos_
 - [x] 7-3: _Primeiros passos em Jest_
 - [x] 7-4: _[Projeto - JavaScript Testes Unitários]()_
 
-##### Bloco 8: JavaScript ES6
+##### Seção 8: Higher Order Functions do JavaScript ES6
 
+- [x] 8-1: _JavaScript ES6 - Introdução a Higher Order Functions_
 - [x] 8-1: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
 - [x] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
 - [x] 8-3: _JavaScript ES6 - Higher Order Functions - reduce_
 - [x] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
 - [x] 8-5: _[Projeto - Zoo functions]()_
 
-##### Bloco 9: Assincronicidade & Callbacks
+## Módulo: Desenvolvimento Front-end :heavy_check_mark:
 
-- [x] 9-1: _JavaScript Assíncrono e Callbacks_
-- [x] 9-2: _JavaScript Assíncrono - Fetch API e async/await_
-- [x] 9-3: _Jest - Testes Assíncronos_
-- [x] 9-4: _[Projeto - Carrinho de Compras]()_
+##### Seção 1: JavaScript e Testes Assíncronos
 
-## Desenvolvimento Front-end :heavy_check_mark:
+- [x] 1-1: _JavaScript Assíncrono e Callbacks_
+- [x] 1-2: _JavaScript Assíncrono - Fetch API e async/await_
+- [x] 1-3: _Jest - Testes Assíncronos_
+- [x] 1-4: _[Projeto - Carrinho de Compras]()_
 
-##### Bloco 10: Introdução - React
+##### Seção 2: Introdução - React
 
-- [x] 10-1: _'Hello, world!' no React!_
-- [x] 10-2: _Componentes React_
-- [x] 10-3: _[Projeto - Sistema Solar]()_
+- [x] 2-1: _'Hello, world!' no React!_
+- [x] 2-2: _Componentes React_
+- [x] 2-3: _[Projeto - Sistema Solar]()_
 
-##### Bloco 11: Componentes com Estado, Eventos e Formulários com React
+##### Seção 3: Componentes com Estado, Eventos e Formulários com React
 
-- [x] 11-1: _Componentes com estado e eventos_
-- [x] 11-2: _Formulários no React_
-- [x] 11-3: _[Projeto - Tryunfo]()_
+- [x] 3-1: _Componentes com estado e eventos_
+- [x] 3-2: _Formulários no React_
+- [x] 3-3: _[Projeto - Tryunfo]()_
 
-##### Bloco 12: React
+##### Seção 4: Ciclo de Vida de Componentes e React Router
 
-- [x] 12-1: _Melhorando o reuso de componentes: props.children e PropTypes_
-- [x] 12-2: _Ciclo de vida de componentes em React_
-- [x] 12-3: _React Router_
+- [x] 4-1: _Ciclo de vida de componentes_
+- [x] 4-2: _React Router_
+- [x] 4-3: _[Projeto - Trybe Tunes]()_
 
-##### Bloco 13: Metodologias Ágeis
+##### Seção 5: Metodologias Ágeis
 
-- [x] 13-1: _Metodologias Ágeis_
-- [x] 13-2: _[Projeto - Frontend Online Store]()_
+- [x] 5-1: _Metodologias Ágeis_
+- [x] 5-2: _[Projeto - Frontend Online Store]()_
 
-##### Bloco 14: Testes em React
+##### Seção 6: Testes automatizados com React Testing Library
 
-- [x] 14-1: _Testando React com a React Testing Library_
-- [x] 14-2: _Testando React com a React Testing Library - Parte 2_
-- [x] 14-3: _[Projeto - Testes em React]()_
+- [x] 6-1: _RTL - Primeiros Passos_
+- [x] 6-2: _Mocks e Inputs_
+- [x] 6-2: _Testando React Router_
+- [x] 6-3: _[Projeto - Testes em React]()_
 
-##### Bloco 15: Introdução ao Redux
+##### Seção 7: Gerenciamento de estado com Redux
 
-- [x] 15-1: _Introdução ao Redux_
-- [x] 15-2: _React com Redux - Parte 1_
-- [x] 15-3: _React com Redux - Prática_
-- [x] 15-4: _React com Redux - Parte 2_
-- [x] 15-5: _Testes síncronos com React-Redux_
-- [x] 15-6: _[Projeto - Tabela com filtros de dados]()_
+- [x] 7-1: _Introdução ao Redux - O estado global da aplicação_
+- [x] 7-2: _Usando o Redux no React_
+- [x] 7-3: _Usando o Redux no React - Prática_
+- [x] 7-4: _Usando o Redux no React - Actions Assíncronas_
+- [x] 7-5: _Testes com React-Redux_
+- [x] 7-6: _[Trybe Wallet]()_
 
-##### Bloco 16: Projeto React
+##### Seção 8: Projeto Jogo de Trivia
 
-- [x] 16-1: _[Projeto - Jogo de Trivia]()_
+- [x] 8-1: _[Projeto - Jogo de Trivia]()_
 
-##### Bloco 17: React & Context API
+##### Seção 9: Context API e React Hooks
 
-- [x] 17-1: _Context API do React_
-- [x] 17-2: _React Hooks - useState e useContext_
-- [x] 17-3: _React Hooks - useEffect e Hooks customizados_
-- [x] 17-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
+- [x] 9-1: _Context API do React_
+- [x] 9-2: _React Hooks - useState e useContext_
+- [x] 9-3: _React Hooks - useEffect e Hooks customizados_
+- [x] 9-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
 
-##### Bloco 18: Projeto Final de Front-end
+##### Seção 10: Projeto App de Receitas
 
-- [x] 18-1: _[Projeto - App de Receitas]()_
+- [x] 10-1: _[Projeto - App de Receitas]()_
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
