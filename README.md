@@ -172,30 +172,30 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Seção 5: Arquitetura de Software: Model, Service e Controller
 
-- [ ] 5-1: _Arquitetura de Software: Camada Model_
-- [ ] 5-2: _Arquitetura de Software: Camada Service_
-- [ ] 5-3: _Arquitetura de Software: Camada Controller_
-- [ ] 5-3: _[Projeto - Store Manager]()_
+- [x] 5-1: _Arquitetura de Software: Camada Model_
+- [x] 5-2: _Arquitetura de Software: Camada Service_
+- [x] 5-3: _Arquitetura de Software: Camada Controller_
+- [x] 5-3: _[Projeto - Store Manager]()_
 
 ##### Seção 6: Node.js: ORM e Autenticação
 
-- [ ] 6-1: _Interface da aplicação com o banco de dados_
-- [ ] 6-2: _Associations 1:1 e 1:N_
-- [ ] 6-3: _Associations N:N e Transactions_
-- [ ] 6-4: JWT - (JSON Web Token)_
-- [ ] 6-4: _[Projeto - API de Blogs]()_
+- [x] 6-1: _Interface da aplicação com o banco de dados_
+- [x] 6-2: _Associations 1:1 e 1:N_
+- [x] 6-3: _Associations N:N e Transactions_
+- [x] 6-4: JWT - (JSON Web Token)_
+- [x] 6-4: _[Projeto - API de Blogs]()_
 
 ##### Seção 7: Deployment
 
-- [ ] 7-1: _Infraestrutura - Deploy com Heroku_
-- [ ] 7-2: _Deploy Docker & Heroku_
+- [x] 7-1: _Infraestrutura - Deploy com Heroku_
+- [x] 7-2: _Deploy Docker & Heroku_
 - [ ] 7-3: _[Projeto - Stranger Things]()_
 
 ##### Seção 8: Introdução a TypeScript
 
-- [ ] 8-1: _Introdução ao TypeScript_
-- [ ] 8-2: _Tipagem Estática e Generics_
-- [ ] 8-3: _Express com TypeScript_
+- [x] 8-1: _Introdução ao TypeScript_
+- [x] 8-2: _Tipagem Estática e Generics_
+- [x] 8-3: _Express com TypeScript_
 - [ ] 8-4: _[Projeto - Trybesmith]()_
 
 ##### Seção 9: 
