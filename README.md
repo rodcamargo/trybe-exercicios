@@ -196,44 +196,44 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 8-1: _Introdução ao TypeScript_
 - [x] 8-2: _Tipagem Estática e Generics_
 - [x] 8-3: _Express com TypeScript_
-- [ ] 8-4: _[Projeto - Trybesmith]()_
+- [x] 8-4: _[Projeto - Trybesmith]()_
 
-##### Seção 9: 
+##### Seção 9: Programação Orientada a Objetos (POO) e SOLID
 
-- [ ] 9-1: _ _
-- [ ] 9-2: _ _
-- [ ] 9-3: _ _
+- [x] 9-1: _Introdução à Orientação a Objetos_
+- [ ] 9-2: _Herança e Interfaces_
+- [ ] 9-3: _Polimorfismo_
+- [ ] 9-4: _SOLID - Introdução e Princípios S, O e D_
+- [ ] 9-5: _SOLID - Princípios L e I_
+- [ ] 9-6: _[Projeto - Trybers and Dragons]()_
 
-##### Seção 10: 
+##### Seção 10: Projeto - TFC - Trybe Futebol Clube
 
-- [ ] 10-1: _ _
-- [ ] 10-2: _ _
-- [ ] 10-3: _ _
+- [ ] 10-1: _[Projeto - TFC - Tryber Futebol Clube]()_
 
-##### Seção 11: 
+##### Seção 11: Introdução ao MongoDB
 
-- [ ] 11-1: _ _
-- [ ] 11-2: _ _
-- [ ] 11-3: _[Projeto - ]()_
+- [ ] 11-1: _MongoDB - Introdução_
+- [ ] 11-2: _Filter Opetators_
+- [ ] 11-3: _Operadores de consulta_
+- [ ] 11-4: _Updates Simples_
+- [ ] 11-5: _Updates Complexos - Arrays_
+- [ ] 11-: _[Projeto - Commerce]()_
 
-##### Seção 12: 
+##### Seção 12: MongoDB com Node.js e POO
 
-- [ ] 12-1: _ _
-- [ ] 12-2: _ _
-- [ ] 12-3: _[Projeto - ]()_
+- [ ] 12-1: _Mongoose e arquitetura MSC (Camada Model)_
+- [ ] 12-2: _Mongoose e arquitetura MSC (Camada Service e Controller)_
+- [ ] 12-3: _[Projeto - Car Shop]()_
 
-##### Seção 13: 
+##### Seção 13: Projeto App de Delivery
 
-- [ ] 13-1: _[Projeto - ]()_
+- [ ] 13-1: _[Projeto - App de Delivery]()_
 
-##### Seção 14: 
+##### Seção 14: MasterClass - VPS, CI/CD
 
-- [ ] 14-1: _ _ 
-- [ ] 14-2: _ _
-- [ ] 14-3: _ _
-- [ ] 14-4: _ _
-- [ ] 14-3: _[Projeto - ]()_
-
+- [ ] 14-1: _VPS_ 
+- [ ] 14-2: _Dia 2_
 
 ## Módulo: Ciência da Computação :hourglass_flowing_sand:
 
